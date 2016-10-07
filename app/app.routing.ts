@@ -5,7 +5,7 @@ import { HeroesComponent }      from './heroes.component';
 import { HeroDetailComponent }      from './hero-detail.component';
 import { DashboardComponent }      from './dashboard.component';
 
-const appRoutes: Routes = [
+const appRoutes: Routes = <Routes>[
   {
     path: 'heroes',
     component: HeroesComponent
@@ -22,7 +22,7 @@ const appRoutes: Routes = [
   {
     path: 'detail/:id',
     component: HeroDetailComponent
-  },
-
+  }
 ];
+
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
